@@ -71,9 +71,7 @@ public class Laberinto {
                 minRestante=Math.min(minRestante, res);
             }
         }
-    
-        if(mat[fi][ci].isEste() && ci<mat[0].length && !visitados[fi][ci+1]){
-
+        
         if(mat[fi][ci].isEste() && ci<mat[0].length && !visitados[fi][ci+1]){
             int res = buscarCaminoMenorLongitud(mat, fi, ci+1, ff, cf, visitados);
             if(res!=Integer.MAX_VALUE){
